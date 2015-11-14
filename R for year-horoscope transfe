@@ -1,0 +1,9 @@
+attach (cmoa)
+birth_date
+Y<-matrix(birth_date)
+HoroscopeID<-matrix(Y%%12)
+HoroscopeID
+cmoa$HoroscopeID<-HoroscopeID
+HoroscopeID
+horoscope<- factor(Heroscope,levels = c(1,2,3,4,5,6,7,8,9,10,11,12),labels = c("Rat", "Ox", "Tiger","Rabbit","Dragon","Snake","Horse","Sheep","Monkey","Rooster","Dog","Pig"))
+cmoa$horoscope<-horoscope
