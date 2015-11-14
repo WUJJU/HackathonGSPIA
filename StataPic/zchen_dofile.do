@@ -53,6 +53,6 @@ forvalues i=1(1)12 {
 	generate hor`i'=1 if horoscopeid==`i'
 	replace hor`i'=0 if hor`i'==.
 }
-forvalues i=1(1)12 {
-	probit hor`i' mediumid nationalityid 
-}
+generate pencilonpaper=1 if mediumid==32
+replace pencilonpaper=0 if pencilonpaper==.
+probit pencilonpaper hor1 hor2 hor3 hor4 hor5 hor6 hor7 hor8 hor9 hor10 hor11 hor12
