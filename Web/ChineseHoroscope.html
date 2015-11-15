@@ -35,177 +35,64 @@ function validateN(event) {
 
 function choroscope(){
        var year=document.getElementById("year").value;
+        window.location = 'result.html?year='+year;
      //  document.getElementById("chinesehoro").innerHTML = year;
-       var r=year%12;//r is remainder
-          if(r==1) {
-            document.getElementById("chinesehoro1").src = "zodiac-rooster.png";
-            document.getElementById("chinesehoro2").innerHTML = "酉鸡";
-            document.getElementById("chinesehoro3").innerHTML = "--  *--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-            document.getElementById("M").src="pic1.png";
-            document.getElementById("T").src="pic2.png";
-            
-          }else if(r==2){
-            document.getElementById("chinesehoro1").innerHTML = "Dog";
-            document.getElementById("chinesehoro2").innerHTML = "戌狗";
-           document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==3){
-            document.getElementById("chinesehoro1").innerHTML = "Pig";
-            document.getElementById("chinesehoro2").innerHTML = "亥猪";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==4){
-            document.getElementById("chinesehoro1").innerHTML = "Mice";
-            document.getElementById("chinesehoro2").innerHTML = "子鼠";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==5){
-            document.getElementById("chinesehoro1").innerHTML = "Cattle";
-            document.getElementById("chinesehoro2").innerHTML = "丑牛";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==6){
-            document.getElementById("chinesehoro1").innerHTML = "Tiger";
-            document.getElementById("chinesehoro2").innerHTML = "寅虎";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==7){
-            document.getElementById("chinesehoro1").innerHTML = "Rabbit";
-            document.getElementById("chinesehoro2").innerHTML = "卯兔";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==8){
-            document.getElementById("chinesehoro1").innerHTML = "Dragon";
-            document.getElementById("chinesehoro2").innerHTML = "辰龙";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==9){
-            document.getElementById("chinesehoro1").innerHTML = "Sneak";
-            document.getElementById("chinesehoro2").innerHTML = "巳蛇";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==10){
-            document.getElementById("chinesehoro1").innerHTML = "Horse";
-            document.getElementById("chinesehoro2").innerHTML = "午马";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==11){
-            document.getElementById("chinesehoro1").innerHTML = "Sheep";
-            document.getElementById("chinesehoro2").innerHTML = "未羊";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }else if(r==12){
-            document.getElementById("chinesehoro1").innerHTML = "Monkey";
-            document.getElementById("chinesehoro2").innerHTML = "申猴";
-            document.getElementById("chinesehoro3").innerHTML = "--*--*--";
-            document.getElementById("MB").style.visibility="visible";
-            document.getElementById("TB").style.visibility="visible";
-            document.getElementById("CB").style.visibility="visible";
-          }
+      
      
     }
-    function showM(){
-           document.getElementById("T").style.display="none";
-        document.getElementById("C").style.display="none";
-      document.getElementById("M").style.display="initial";
-
-    }
-    function showT(){
-        document.getElementById("M").style.display="none";
-        document.getElementById("C").style.display="none";
-      document.getElementById("T").style.display="initial";
    
-    }
-    function showC(){
-          document.getElementById("M").style.display="none";
-        document.getElementById("T").style.display="none";
-      document.getElementById("C").style.display="initial";
- 
-    }
-       function showA(){
-     
-      document.getElementById("Ascopes").style.display="initial";
- 
-    }
     </script>
+    <style type="text/css">
+    .panel-info{
+      width:370px;
+      margin:0 auto;
+    }
+    .wuhao-form{
+      width: 155px;
+      margin-left: 65px;
+      display: inline;
+    }
+    .wuhao-btn{
+      margin-left: 15px;
+    }
+    .hh3{
+      text-align: center;
+    }
+    </style>
       <!-- Latest compiled and minified CSS -->
-
+ <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
 </head>
 
 <body style="margin: 25px;">
 	
 
-		<div style="position:relative;margin-left:320px;margin-top:10px;">
-	   <img src="Horo.png" id="ch" style="display:initial;" class="img-rounded"  alt="CHineseHoroscope" width="350" height="200"> 
-				</div>
-        <div  style="position:relative;margin-left:350px;margin-top:1px;">
+     
+    <h3 class="hh3">Carnegie Art Museum: Artist Breakdown by Department and Chinese Horoscope</h3>
+		<div style="width:700px; margin:0 auto;">
+	  
+  <div class='tableauPlaceholder' style='width: 700px; height: 680px;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fr&#47;FrontPage4&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='700' height='680' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='FrontPage4&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fr&#47;FrontPage4&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
 
-        <div class="col-xs-3">
-       
-        <input class="form-control" id="year" type="text" onkeypress="return validateN(event)" placeholder="input your birth year..."/>
 
-        </div>
-                <button class="btn btn-primary " onclick="choroscope()">Search</button>   
-				</div>
-          
-	     <div  style="position:relative;margin-left:300px;margin-top:20px;">
+		</div>
+  </br>
+        <!-- -->
+    <div>
+        
+       <div class="panel-info"> 
+         <div class="alert alert-info" >
+         <strong>Input</strong> your birth year to find your Chinese Horoscope.
+          </div>
+     
+        
        
-	<img id="chinesehoro1" height="40" weight="35"/><p id="chinesehoro2" ></p><p id="chinesehoro3"></p>
-				</div>
-			
-    
-			
+        <input class="form-control wuhao-form" id="year" type="text" onkeypress="return validateN(event)" placeholder="input your birth year..."/>
+
+        <button class="btn btn-primary wuhao-btn" onclick="choroscope()">Search</button>  
+       </div>
+   </div>
+ 
    
-				
-    <div style="position:absolute;margin-left:70px;margin-top:80px;">
-	<ul class="nav nav-pill nav-stacked col-xs-2">
-    <li role="presentation"><button style="visibility:hidden;" id="MB" class="btn btn-warning" onclick="showM()">Medium</button></li>
-  <li role="presentation"><button style="visibility:hidden;" id="TB" class="btn btn-warning" onclick="showT();">Top &nbsp3&nbsp&nbsp&nbsp</button></li>
-  <li role="presentation"><button style="visibility:hidden;" id="CB" class="btn btn-warning" onclick="showC();">Country</button></li>
-</ul>
-  
-    </div>
-   <div style="position:absolute;margin-left:300px;margin-top:50px;">
-      
-      <img src="pic1.png" id="M" style="display:none;" class="img-rounded"  alt="Cinque Terre" width="500" height="300"> 
-       <img  src="pic2.png" id="T" style="display:none;" class="img-rounded"  alt="Cinque Terre" width="500" height="300"> 
-        <img src="pic3.png" id="C" style="display:none;" class="img-rounded"  alt="Cinque Terre" width="500" height="300"> 
-
-
-<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-         <div id="Ascopes" style="display:none;">
-<div class='tableauPlaceholder' style='width: 800px; height: 500px;'><noscript><a href='#'><img alt='Sheet 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Hackathon_Horoscope&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='800' height='500' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Hackathon_Horoscope&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;Hackathon_Horoscope&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
- </div>
-
-
-      </div>
-   <button  id="All" class="btn btn-warning" onclick="showA();">All</button>
-
+	
          
     <p class="padding" style="padding-bottom:30%"></p>
 </body>
