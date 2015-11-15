@@ -1,6 +1,8 @@
+local j=_N
 append using "C:\Users\Ziqiao\Documents\CMOA\cmoa_nationality.dta"
 generate nat_new = ""
-forvalues i=14511(1)14733 {
+local k=_N
+forvalues i=`j'(1)`k' {
 	replace nat_new = Country[`i'] if nationality == nat_code[`i']
 }
-drop in 14511/14733
+drop in `j'/`k'
