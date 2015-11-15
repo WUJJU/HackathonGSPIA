@@ -1,0 +1,328 @@
+
+
+<html>
+<head>
+	<title>GSPIA Team</title>
+  <meta charset="utf-8">
+      <script >
+   
+     </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+
+ 
+    <script type="text/javascript" >
+    function getYear(){
+      var query=getQueryParams(document.location.search);
+      var r=query.year%12;
+      choroscope(r);
+
+    }
+   function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+   window.onload=getYear;
+function choroscope(r){
+    
+          if(r==1) {
+            document.getElementById("chinesehoro1").src = "zodiac-rooster.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Rooster.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>bright, communicative and ambitious. Good looking and prefer to dress up. Often starts out enthusiastic, but need persistence to complete projects</br>";
+            document.getElementById("artist").innerHTML = "Top 3 Artist";
+        
+             document.getElementById("chinesehoro4").innerHTML = "George Biddle";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Lawrence B. Saint";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Ralph W. Johnston";
+            document.getElementById("chinesehoro6").href = "";
+            document.getElementById("TableauR").style.display="initial";
+            
+          }else if(r==2){
+            document.getElementById("chinesehoro1").src = "zodiac-dog.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Dog.";
+           document.getElementById("chinesehoro3").innerHTML = "</br>clever, courageous, independent, not afraid of difficulties in daily life. Can be conservative and emotional.";
+              document.getElementById("artist").innerHTML = "Top 3 Artist";
+        
+             document.getElementById("chinesehoro4").innerHTML = "Zoe Strauss";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Claude Mellan";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Anton Mauve";
+            document.getElementById("chinesehoro6").href = "";
+
+          }else if(r==3){
+            document.getElementById("chinesehoro1").src = "zodiac-pig.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Pig.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>simple, considerate, optimistic about life, generous and merciful to a fault. Can sometimes be sluggish.";
+            document.getElementById("artist").innerHTML = "Top 3 Artist";
+        
+             document.getElementById("chinesehoro4").innerHTML = "Alfred Bendiner";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Herbert Saul Walfish";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Edward Eldon Deane";
+            document.getElementById("chinesehoro6").href = "";
+         
+          }else if(r==4){
+            document.getElementById("chinesehoro1").src = "zodiac-rat.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Rat.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>usually compassionate, graceful and sensitive, works with speed and efficiency. Prone to missing out on opportunity due to hesitation.";
+            document.getElementById("artist").innerHTML = "Top 3 Artist";
+        
+             document.getElementById("chinesehoro4").innerHTML = "Josef Albers";
+            document.getElementById("chinesehoro4").href = "https://en.wikipedia.org/wiki/Josef_Albers";
+            document.getElementById("chinesehoro5").innerHTML = "Edward Brown Lee";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Timothy Cole";
+            document.getElementById("chinesehoro6").href = "";
+              document.getElementById("TableauRat").style.display="initial";
+            
+          }else if(r==5){
+            document.getElementById("chinesehoro1").src = "zodiac-ox.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Ox.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>contemplative, simple, not easily affected by one's surroundings, honest to concept and ability.";
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+            document.getElementById("chinesehoro4").innerHTML = "Guerrilla Girls";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "John Hancock";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Walter Munhall";
+            document.getElementById("chinesehoro6").href = "";
+               document.getElementById("TableauO").style.display="initial";
+          }else if(r==6){
+            document.getElementById("chinesehoro1").src = "zodiac-tiger.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Tiger.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>valiant, courageous and virtuous, but short-tempered and prone to showing-off accomplishments.";
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+             document.getElementById("chinesehoro4").innerHTML = "Luke Swank";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Francisco de Goya";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Meissen Porcelain Manufactory";
+            document.getElementById("chinesehoro6").href = "";
+     
+          }else if(r==7){
+            document.getElementById("chinesehoro1").src = "zodiac-rabbit.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Rabbit.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>usually compassionate, graceful and sensitive, works with speed and efficiency. Prone to missing out on opportunity due to hesitation.  ";
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+            document.getElementById("chinesehoro4").innerHTML = "Frederick P. L. Mills";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Wedgwood";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Clyde Hare";
+            document.getElementById("chinesehoro6").href = "";
+        
+          }else if(r==8){
+            document.getElementById("chinesehoro1").src = "zodiac-dragon.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Dragon.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>intellectual, ambitious, and eccentric, not afraid of difficulties but hate to be controlled by others.";
+            document.getElementById("artist").innerHTML = "Top 3 Artist";
+            document.getElementById("chinesehoro4").innerHTML = "Benton Murdoch Spruance";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Katsushika Hokusai";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Mel Bochner";
+            document.getElementById("chinesehoro6").href = "";
+            
+          }else if(r==9){
+            document.getElementById("chinesehoro1").src = "zodiac-snake.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Snake.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>wise and witty, gifted in literature and art. Their nonchalance means few people will respond sympathetically to their works.";
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+             document.getElementById("chinesehoro4").innerHTML = "Hiroshige";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "William Kauffman";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Samuel Stevens Hood";
+            document.getElementById("chinesehoro6").href = "";
+          
+          }else if(r==10){
+            document.getElementById("chinesehoro1").src = "zodiac-horse.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Horse.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>dynamic, warm-hearted and consistent. Very positive, however, their love of spending may get them in trouble. ";
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+              document.getElementById("chinesehoro4").innerHTML = "W. Eugene Smith";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "James Abbott McNeill Whistler";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Kunisada";
+            document.getElementById("chinesehoro6").href = "";
+           
+          }else if(r==11){
+            document.getElementById("chinesehoro1").src = "zodiac-sheep.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Sheep.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>wise, gentle and compassionate, sensitive to art and beauty, enjoy quiet living. Pessimistic and economical. ";
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+               document.getElementById("chinesehoro4").innerHTML = "Rudolph Ruzicka";
+            document.getElementById("chinesehoro4").href = "";
+            document.getElementById("chinesehoro5").innerHTML = "Georges Rouault";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "Childe Hassam";
+            document.getElementById("chinesehoro6").href = "";
+      
+          }else if(r==0){
+              document.getElementById("chinesehoro1").src = "zodiac-monkey.png";
+            document.getElementById("chinesehoro2").innerHTML = "Your Chinese Horoscope is Monkey.";
+            document.getElementById("chinesehoro3").innerHTML = "</br>quick-witted and versatile, innovative and lively. Has an impetuous temper and a slight tendency to look down upon others.";
+
+            
+             document.getElementById("artist").innerHTML = "Top 3 Artist";
+            document.getElementById("chinesehoro4").innerHTML = "Samuel Rosenberg";
+            document.getElementById("chinesehoro4").href = "https://en.wikipedia.org/wiki/Samuel_Rosenberg";
+            document.getElementById("chinesehoro5").innerHTML = "Otto Gerhard Leopold";
+            document.getElementById("chinesehoro5").href = "";
+            document.getElementById("chinesehoro6").innerHTML = "David C. Hale|";
+            document.getElementById("chinesehoro6").href = "";
+            document.getElementById("TableauM").style.display="initial";
+      
+          }
+     
+    }
+   
+    </script>
+      <!-- Latest compiled and minified CSS -->
+      <style>
+        #info-display{
+          margin:5px auto;
+          width: 400px;
+          position: relative;
+          font-family: "Comic Sans MS", cursive, sans-serif;
+/*          text-wrap:none;
+*/          word-break: break-all;
+          /*white-space:normal;*/
+        }
+        #chinesehoro2,#chinesehoro3{
+          position: absolute;
+          left:140px;
+        }
+        #chinesehoro2{
+          top:10px;
+        }
+        #chinesehoro3{
+          /* ADD font size*/
+          top:30px;
+        }
+        #t3{
+         margin:5px auto;
+          width: 400px;
+          position: relative;
+          font-family: "Comic Sans MS", cursive, sans-serif;
+/*          text-wrap:none;
+*/          word-break: break-all;
+          /*white-space:normal;*/
+        }
+        #artist{
+          position: absolute;
+          left:130px;
+        }
+        #chinesehoro4{
+        
+          display: inline;
+        }
+        #chinesehoro5{
+          display: inline;
+        }
+      
+        
+      </style>
+
+</head>
+
+<body style="margin: 25px;">
+
+  
+	    
+    
+	     <div id="info-display">
+	       <img id="chinesehoro1" height="120" width="100"/>
+         <p id="chinesehoro2"></p>
+         <p id="chinesehoro3"></p>
+    
+			 </div>
+      </br>
+			<div id="t3">
+         <p id="artist"></p></br>
+         <a id="chinesehoro4"></a>&nbsp&nbsp&nbsp&nbsp
+         <a id="chinesehoro5"></a>&nbsp&nbsp&nbsp&nbsp
+         <a id="chinesehoro6"></a>
+      </div>
+			
+   
+				
+    <div style="position:absolute;margin-left:70px;margin-top:80px;">
+	<ul class="nav nav-pill nav-stacked col-xs-2">
+    <li role="presentation"><button style="visibility:hidden;" id="MB" class="btn btn-warning" onclick="showM()">Medium</button></li>
+  <li role="presentation"><button style="visibility:hidden;" id="TB" class="btn btn-warning" onclick="showT();">Top &nbsp3&nbsp&nbsp&nbsp</button></li>
+  <li role="presentation"><button style="visibility:hidden;" id="CB" class="btn btn-warning" onclick="showC();">Country</button></li>
+</ul>
+  
+    </div>
+
+
+
+
+<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+
+<!--Monkey-->
+<div style="width:700px; margin:0 auto;">
+<div id="TableauM" style="display:none;">
+<div class='tableauPlaceholder' style='width: 654px; height: 742px;'><noscript><a href='#'><img alt='Monkey ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C8&#47;C8GN42CHG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;C8GN42CHG' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C8&#47;C8GN42CHG&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+
+</div>
+ </div>
+
+<!--Rooster-->
+<div style="width:700px; margin:0 auto;">
+<div id="TableauR" style="display:none;">
+
+  <div class='tableauPlaceholder' style='width: 654px; height: 742px;'><noscript><a href='#'><img alt='Rooster ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;RoosterHoroscope&#47;Rooster&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='RoosterHoroscope&#47;Rooster' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ro&#47;RoosterHoroscope&#47;Rooster&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+
+
+ </div>
+</div>
+  
+  <!--Rat-->
+  <div style="width:700px; margin:0 auto;">
+<div id="TableauRat" style="display:none;">
+
+  <div class='tableauPlaceholder' style='width: 654px; height: 742px;'><noscript><a href=''><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8F&#47;8FJX9MPZR&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;8FJX9MPZR' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8F&#47;8FJX9MPZR&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+
+ </div>
+</div>
+  <!--Ox-->
+  <div style="width:700px; margin:0 auto;">
+<div id="TableauO" style="display:none;">
+
+ <div class='tableauPlaceholder' style='width: 654px; height: 742px;'><noscript><a href=''><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;R8&#47;R8QFMQT9R&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;R8QFMQT9R' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;R8&#47;R8QFMQT9R&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+
+ </div>
+
+</div>
+
+         
+    <p class="padding" style="padding-bottom:30%"></p>
+</body>
+</html>  
