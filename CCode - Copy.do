@@ -19,6 +19,7 @@ encode nationality, generate(nat_code)
 reg yeartoacq yearacquired monkey rooster
 
 reg yeartoacq yearacquired monkey rooster i.dep_code i.nat_code
+gen onview= physical_location!="Not on View"
 gsort horoscopeid department
 encode medium, generate(med)
 reg yeartoacq yearacquired monkey rooster i.med if onview==1
